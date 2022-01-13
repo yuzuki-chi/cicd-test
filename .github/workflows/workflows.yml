@@ -2,7 +2,7 @@ name: "test workflow"
 
 on: 
   push:
-    types: [created, published]
+    # types: [created, published]
     branches:
       - main
     tags:
