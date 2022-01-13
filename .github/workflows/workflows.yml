@@ -7,3 +7,22 @@ on:
       - main
     tags:
       - tests
+
+jobs:
+  test_job:
+    name: Test Job
+    runs-on: macos-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+    
+    outputs:
+      output1: ${{ steps.step1.outputs.test }}
+      output2: ${{ steps.step2.outputs.test }}
+    
+    steps:
+      - id: step1
+        run: echo "Hello, World! This is first step."
+      - id: step2
+        run: curl https://yuzukichi.jp
