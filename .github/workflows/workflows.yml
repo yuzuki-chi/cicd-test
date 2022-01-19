@@ -28,10 +28,10 @@ jobs:
       - id: step1
         run: echo "Hello, World! This is first step."
       - id: step2
-        run: pwd
+        run: cd /Users/runner/work/cicd-test/cicd-test && pwd
       - id: step3
-        run: javac ./Main.java
+        run: javac /Users/runner/work/cicd-test/cicd-test/Main.java
       - id: step4
-        run: java ./Main
+        run: java /Users/runner/work/cicd-test/cicd-test/Main
       - id: step5
-        run: python ./main.py
+        run: python /Users/runner/work/cicd-test/cicd-test/main.py
