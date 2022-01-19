@@ -20,9 +20,12 @@ jobs:
     outputs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
+      output3: ${{ steps.step3.outputs.test }}
     
     steps:
       - id: step1
         run: echo "Hello, World! This is first step."
       - id: step2
         run: curl https://yuzukichi.jp
+      - id: step3
+        run: pwd && ls -la
