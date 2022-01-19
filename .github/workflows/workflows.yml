@@ -28,7 +28,7 @@ jobs:
       - id: step1
         run: echo "Hello, World! This is first step."
       - id: step2
-        run: curl https://yuzukichi.jp
+        run: ls -la
       - id: step3
         run: javac ./Main.java
       - id: step4
