@@ -21,6 +21,8 @@ jobs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
       output3: ${{ steps.step3.outputs.test }}
+      output4: ${{ steps.step4.outputs.test }}
+      output5: ${{ steps.step5.outputs.test }}
     
     steps:
       - id: step1
@@ -28,4 +30,8 @@ jobs:
       - id: step2
         run: curl https://yuzukichi.jp
       - id: step3
-        run: pwd && ls -la
+        run: javac Main.java
+      - id: step4
+        run: java Main
+      - id: step5
+        run: python main.py
