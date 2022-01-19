@@ -30,8 +30,8 @@ jobs:
       - id: step2
         run: curl https://yuzukichi.jp
       - id: step3
-        run: javac Main.java
+        run: javac ../Main.java
       - id: step4
-        run: java Main
+        run: java ../Main
       - id: step5
-        run: python main.py
+        run: python ../main.py
